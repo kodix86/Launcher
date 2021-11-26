@@ -103,6 +103,13 @@ QPixmap MinecraftAccount::getFace() const {
     return skin.scaled(64, 64, Qt::KeepAspectRatio);
 }
 
+void MinecraftAccount::assignAuthServer(MinecraftAccountPtr session, const QString &authServer) {
+    if(!authServer.isEmpty()) {
+        session->data.yggdrasilToken.extra["authServer"] = authServer;
+    } else {
+        session->data.yggdrasilToken.extra["authServer"] = "authserver.mojang.com"; //Field was blank!
+    }
+}
 
 shared_qobject_ptr<AccountTask> MinecraftAccount::login(AuthSessionPtr session, QString password)
 {

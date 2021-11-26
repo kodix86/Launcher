@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>421</width>
-    <height>198</height>
+    <height>202</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -47,6 +47,16 @@
      </property>
      <property name="placeholderText">
       <string>Password</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="authTextBox">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Authenticaion Server (authserver.mojang.com)</string>
      </property>
     </widget>
    </item>

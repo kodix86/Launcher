@@ -3,7 +3,7 @@ target_link_libraries(secrets Qt5::Core)
 target_compile_definitions(secrets PUBLIC -DEMBED_SECRETS)
 target_include_directories(secrets PUBLIC .)
 
-set(Launcher_CommonName "DevLauncher")
+set(Launcher_CommonName "AltMC")
 
 set(Launcher_Copyright "MultiMC Contributors" PARENT_SCOPE)
 set(Launcher_Domain "multimc.org" PARENT_SCOPE)

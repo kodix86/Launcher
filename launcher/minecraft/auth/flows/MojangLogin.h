@@ -8,7 +8,7 @@ public:
     explicit MojangLogin(
         AccountData *data,
         QString password,
-        QObject *parent = 0
+        QObject *parent = nullptr
     );
     void executeTask() override;
 

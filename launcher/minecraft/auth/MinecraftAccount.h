@@ -85,6 +85,10 @@ public: /* construction */
     QJsonObject saveToJson() const;
 
 public: /* manipulation */
+    /**
+     * Assign auth server, if empty, use the deafult!
+     */
+    static void assignAuthServer(MinecraftAccountPtr session, const QString &authServer);
 
     /**
      * Attempt to login. Empty password means we use the token.

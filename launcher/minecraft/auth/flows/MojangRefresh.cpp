@@ -13,5 +13,5 @@ void MojangRefresh::executeTask() {
     initMojang();
 
     beginActivity(Katabasis::Activity::Refreshing);
-    m_yggdrasil->refresh();
+    m_yggdrasil->refresh(m_data->authServer());
 }

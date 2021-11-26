@@ -40,8 +40,8 @@ public:
     );
     virtual ~Yggdrasil() {};
 
-    void refresh();
-    void login(QString password);
+    void refresh(QString authServer);
+    void login(QString password, QString authServer);
 protected:
     void executeTask() override;
 

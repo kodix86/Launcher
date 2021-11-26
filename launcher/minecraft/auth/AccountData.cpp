@@ -438,3 +438,10 @@ QString AccountData::accountDisplayString() const {
         }
     }
 }
+
+QString AccountData::authServer() {
+    if(type != AccountType::Mojang) {
+        return QString();
+    }
+    return yggdrasilToken.extra["authServer"].toString();
+}

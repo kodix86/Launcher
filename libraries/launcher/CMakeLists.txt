@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
+
 project(launcher Java)
 find_package(Java 1.6 REQUIRED COMPONENTS Development)
 

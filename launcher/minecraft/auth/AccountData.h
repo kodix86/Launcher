@@ -77,4 +77,7 @@ struct AccountData {
     MinecraftProfile minecraftProfile;
     MinecraftEntitlement minecraftEntitlement;
     Katabasis::Validity validity_ = Katabasis::Validity::None;
+
+    //New stuff here dawg! You want a custom auth server?
+    QString authServer();
 };
