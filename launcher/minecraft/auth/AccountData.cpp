@@ -445,3 +445,7 @@ QString AccountData::authServer() {
     }
     return yggdrasilToken.extra["authServer"].toString();
 }
+
+QString AccountData::lastError() const {
+    return errorString;
+}
